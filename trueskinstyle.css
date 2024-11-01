@@ -1,299 +1,705 @@
-*{margin: 0; padding: 0; box-sizing: border-box;}
-a{color: #fff; text-decoration: none;}
-li{list-style: none; color: #fff;}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Pretendard Variable";
+}
+li {
+  list-style: none;
+  color: #fff;
+}
 
 /* 헤더시작 */
-header{
-    font-family: "Raleway", serif;
-    padding: 0 120px;
-    background-color: rgba(194, 193, 193, 0.26);
-    height: 100px;
-    width: 100%;
-    position: absolute
+header {
+  font-family: "Raleway", serif;
+  padding: 0 120px;
+  background-color: rgba(194, 193, 193, 0.26);
+  height: 100px;
+  width: 100%;
+  position: absolute;
 }
-.menubox{
-    width: 100%;
-    line-height: 100px;
-    display:flex ;
-    align-items: center;
+.menubox {
+  width: 100%;
+  line-height: 100px;
+  display: flex;
+  align-items: center;
 }
-.logo{
-    font-size: 40px;
-    font-weight: 300;
+.logo {
+  font-size: 40px;
+  font-weight: 300;
 }
-.menu{
-    display:flex ;
-    justify-content: flex-end;
-    width: 100%;
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
-.menu li{
-    padding-left: 40px;
-}
-
-.menu li:hover a{
-    color: #283d6b;
-    font-weight: 600;
+.menu li {
+  padding-left: 40px;
 }
 
-.memu_togglebtn{
-    display: none;
+.menu li:hover a {
+  color: #283d6b;
+  font-weight: 600;
+}
+
+.memu_togglebtn {
+  display: none;
 }
 /* 헤더끝 */
 
-
 /* 배너시작 */
+.main {
+  width: 100%;
+  height: 200vh;
+  background: url(img/background1.jpg) no-repeat -50px -30px;
+}
+.banner .brandstory {
+  width: 100%;
+  height: 50%;
+}
+.main .banner {
+  height: 100vh;
+}
+.main .banner ul {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main .banner li:nth-of-type(1) {
+  font-family: "Red Hat Display", serif;
+  font-size: 60px;
+}
+.main .banner li:nth-of-type(2) {
+  font-family: "Pretendard Variable";
+  margin-top: 20px;
+  font-size: 28px;
+  font-weight: 100;
+}
+.main .banner li:nth-of-type(3) {
+  font-size: 30px;
+  margin-top: 64px;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 10px;
+  font-weight: 100;
+}
+
+.main .brandstory {
+  height: 100vh;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.main .brandstory div {
+  width: 500px;
+  height: 500px;
+  margin-right: 40px;
+}
+.main .brandstory div:last-child {
+  margin-right: 0;
+}
+.bluetext {
+  position: relative;
+}
+.bluetext ul {
+  text-align: center;
+}
+.bluetext ul li {
+  margin-bottom: 56px;
+}
+.bluetext ul li:nth-child(1) {
+  margin-top: 104px;
+  font-family: "Raleway", serif;
+  font-size: 60px;
+}
+.bluetext ul li:nth-child(2) {
+  font-size: 20px;
+}
+.bluetext ul li:nth-child(3) {
+  font-size: 20px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+
+.bluepic1 {
+  background: url(img/분자1.png);
+}
+.bluepic2 {
+  background: url(img/분자2\ img.PNG);
+}
+/* 배너끝 */
+
+/* 컨테이너시작 */
+.cont1 {
+  width: 100%;
+  height: 100vh;
+  background: url(img/background2.png) no-repeat 0px 0px;
+  background-size: cover;
+  display: flex;
+}
+.cont1text {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}
+.cont1text ul {
+  position: absolute;
+  text-align: right;
+  top: 25%;
+  left: 25%;
+}
+.cont1text ul li {
+  font-family: "Raleway", serif;
+  color: black;
+}
+.cont1text ul li a {
+  font-family: "Red Hat Display", serif;
+  color: black;
+  font-size: 26px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.cont1text ul li:nth-child(1) {
+  font-size: 18px;
+  font-weight: 300;
+  color: #adadad;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.cont1text ul li:nth-child(2) {
+  margin-top: 32px;
+  font-size: 60px;
+  font-weight: 600;
+}
+.cont1text ul li:nth-child(3) {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.cont1text ul li:nth-child(4) {
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+.cont1pic {
+  width: 50%;
+  height: 100vh;
+  background: url(img/clansing\ water\ png.PNG) no-repeat;
+  background-size: cover;
+}
+
+.cont2 {
+  width: 100%;
+  height: 100vh;
+  background: url(img/background2.png) no-repeat 0px 0px;
+  background-size: cover;
+  display: flex;
+  margin-bottom: 124px;
+}
+.cont2pic {
+  width: 50%;
+  height: 100vh;
+  background: url(img/Trueskin\ toner.png) no-repeat;
+  background-size: cover;
+}
+.cont2text {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+}
+.cont2text ul {
+  position: absolute;
+  text-align: left;
+  top: 25%;
+  left: 15%;
+}
+.cont2text ul li {
+  font-family: "Raleway", serif;
+  color: black;
+}
+.cont2text ul li a {
+  font-family: "Red Hat Display", serif;
+  color: black;
+  font-size: 26px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.cont2text ul li:nth-child(1) {
+  font-size: 18px;
+  font-weight: 300;
+  color: #adadad;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.cont2text ul li:nth-child(2) {
+  margin-top: 32px;
+  font-size: 60px;
+  font-weight: 600;
+}
+.cont2text ul li:nth-child(3) {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.cont2text ul li:nth-child(4) {
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.brandtech {
+  width: 1240px;
+  height: 100vh;
+  margin: 0 auto;
+}
+.techtext {
+  margin-bottom: 124px;
+  text-align: center;
+}
+.techtext li {
+  font-family: "Raleway", serif;
+  color: black;
+}
+.techtext li:first-child {
+  font-size: 60px;
+  font-weight: 600;
+}
+.techtext li:last-child {
+  font-size: 20px;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-top: 20px;
+}
+
+.techpic {
+  display: flex;
+  justify-content: center;
+}
+.techpic1 {
+  width: 400px;
+  height: 534px;
+  background: url(img/ocean.webp) -150px center;
+  background-size: cover;
+  position: relative;
+}
+.techpic1_title {
+  font-family: "Tiro Devanagari Hindi", serif;
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+.techpic1_text {
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 80%;
+  left: 20px;
+}
+
+.techpic2 {
+  width: 400px;
+  height: 534px;
+  background: url(img/Hyaluronic\ acid.png) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.techpic2_title {
+  font-family: "Tiro Devanagari Hindi", serif;
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+.techpic2_text {
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 80%;
+  left: 20px;
+}
+
+.techpic3 {
+  width: 400px;
+  height: 534px;
+  background: url(img/ingredient4_2.png) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+.techpic3_title {
+  font-family: "Tiro Devanagari Hindi", serif;
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+.techpic3_text {
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 80%;
+  left: 20px;
+}
+/* 컨테이너 끝 */
+
+/* 풋터시작 */
+.footer {
+  width: 1240px;
+  margin: 0 auto;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.copyright {
+  width: 50%;
+}
+.copyright li {
+  color: black;
+  font-family: "Raleway", serif;
+}
+.copyright li:first-child {
+  font-size: 30px;
+}
+.copyright li:last-child {
+  font-size: 16px;
+}
+.sitemap {
+}
+.sitemap li {
+  color: black;
+  font-size: 12px;
+}
+.sitemap li a {
+  color: black;
+  font-size: 12px;
+}
+.info {
+}
+.info li {
+  color: black;
+  font-size: 12px;
+}
+.cs li {
+  color: black;
+  font-size: 12px;
+}
+
+
+
+@media screen and (max-width: 480px) {
+  /* 헤더시작 */
+  header {
+    font-family: "Raleway", serif;
+    background-color: rgba(194, 193, 193, 0.26);
+    height: 100px;
+    width: 100%;
+    position: absolute;
+  }
+  .menubox {
+    width: inherit;
+    /* line-height: 100px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    
+  }
+  .logo {
+    font-size: 40px;
+    font-weight: 300;
+  }
+  .menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(194, 193, 193, 0.26);
+  }
+  .menu li {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .menu li:hover a {
+    color: #283d6b;
+    font-weight: 600;
+  }
+
+  .memu_togglebtn {
+    display: none;
+  }
+  /* 헤더끝 */
+
+  /* 배너시작 */
 .main {
     width: 100%;
     height: 200vh;
     background: url(img/background1.jpg) no-repeat -50px -30px;
-}
-.banner .brandstory {
+  }
+  .banner .brandstory {
     width: 100%;
     height: 50%;
-}
-.main .banner {
+  }
+  .main .banner {
     height: 100vh;
-}
-.main .banner ul{
+  }
+  .main .banner ul {
+    width: 900px;
     margin: 0 auto;
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-}
-.main .banner li:nth-of-type(1){  
+    transform: translate(-50%, -50%);
+  }
+  .main .banner li:nth-of-type(1) {
     font-family: "Red Hat Display", serif;
     font-size: 60px;
-}
-.main .banner li:nth-of-type(2){
-    margin-top: 10px;
-    font-size: 30px;
-}
-.main .banner li:nth-of-type(3){
+  }
+  .main .banner li:nth-of-type(2) {
+    font-family: "Pretendard Variable";
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 100;
+  }
+  .main .banner li:nth-of-type(3) {
     font-size: 30px;
     margin-top: 64px;
     text-decoration: underline;
+    text-decoration-thickness: 1px;
     text-underline-offset: 10px;
-}
-
-.main .brandstory{
-  height: 100vh;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-
-}
-.main .brandstory div{
-    width: 500px;
+    font-weight: 100;
+  }
+  
+  .main .brandstory {
+    width: 90%;
+    height: 100vh;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+  }
+  .main .brandstory div {
+    width:100%;
     height: 500px;
-    margin-right: 40px ;
-}
-.main .brandstory div:last-child{
+    margin-right: 40px;
+  }
+  .main .brandstory div:last-child {
     margin-right: 0;
-}
-.bluetext{
+  }
+  .bluetext {
     position: relative;
-}
-.bluetext ul{
+  }
+  .bluetext ul {
     text-align: center;
-}
-.bluetext ul li{
+  }
+  .bluetext ul li {
     margin-bottom: 56px;
-}
-.bluetext ul li:nth-child(1){
+  }
+  .bluetext ul li:nth-child(1) {
     margin-top: 104px;
     font-family: "Raleway", serif;
     font-size: 60px;
-}
-.bluetext ul li:nth-child(2){
+  }
+  .bluetext ul li:nth-child(2) {
     font-size: 20px;
-}
-.bluetext ul li:nth-child(3){
+  }
+  .bluetext ul li:nth-child(3) {
     font-size: 20px;
     text-decoration: underline;
     text-underline-offset: 10px;
-}
-
-.bluepic1{
+  }
+  
+  .bluepic1 {
     background: url(img/분자1.png);
-}
-.bluepic2{
+  }
+  .bluepic2 {
     background: url(img/분자2\ img.PNG);
-}
-/* 배너끝 */
+  }
+  /* 배너끝 */
 
-/* 컨테이너시작 */
-.cont1{
+  /* 컨테이너시작 */
+.cont1 {
     width: 100%;
     height: 100vh;
-    background: url(img/background2.png) no-repeat 0px 0px ;
-    background-size: cover;   
+    background: url(img/background2.png) no-repeat 0px 0px;
+    background-size: cover;
     display: flex;
-}
-.cont1text{
+    flex-direction: column;
+  }
+  .cont1text {
     width: 50%;
     height: 100vh;
     position: relative;
-}
-.cont1text ul{
+  }
+  .cont1text ul {
     position: absolute;
     text-align: right;
     top: 25%;
     left: 25%;
-}
-.cont1text ul li{
+  }
+  .cont1text ul li {
     font-family: "Raleway", serif;
     color: black;
-}
-.cont1text ul li a{
+  }
+  .cont1text ul li a {
     font-family: "Red Hat Display", serif;
     color: black;
     font-size: 26px;
     text-decoration: underline;
     text-underline-offset: 10px;
-}
-.cont1text ul li:nth-child(1){
+  }
+  .cont1text ul li:nth-child(1) {
     font-size: 18px;
     font-weight: 300;
     color: #adadad;
     font-family: "Noto Sans KR", sans-serif;
-}
-.cont1text ul li:nth-child(2){
+  }
+  .cont1text ul li:nth-child(2) {
     margin-top: 32px;
     font-size: 60px;
     font-weight: 600;
-}
-.cont1text ul li:nth-child(3){
+  }
+  .cont1text ul li:nth-child(3) {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 40px;
-}
-.cont1text ul li:nth-child(4){
+  }
+  .cont1text ul li:nth-child(4) {
     font-family: "Noto Sans KR", sans-serif;
     margin-bottom: 40px;
-    font-size: 18px;             
-}
-.cont1pic{
+    font-size: 18px;
+  }
+  .cont1pic {
     width: 50%;
     height: 100vh;
     background: url(img/clansing\ water\ png.PNG) no-repeat;
     background-size: cover;
-}
-
-.cont2{
+  }
+  
+  .cont2 {
     width: 100%;
     height: 100vh;
-    background: url(img/background2.png) no-repeat 0px 0px ;
-    background-size: cover;   
+    background: url(img/background2.png) no-repeat 0px 0px;
+    background-size: cover;
     display: flex;
-}
-.cont2pic{
+    margin-bottom: 124px;
+  }
+  .cont2pic {
     width: 50%;
     height: 100vh;
     background: url(img/Trueskin\ toner.png) no-repeat;
     background-size: cover;
-}
-.cont2text{
+  }
+  .cont2text {
     width: 50%;
     height: 100vh;
     position: relative;
-}
-.cont2text ul{
+  }
+  .cont2text ul {
     position: absolute;
     text-align: left;
     top: 25%;
     left: 15%;
-}
-.cont2text ul li{
+  }
+  .cont2text ul li {
     font-family: "Raleway", serif;
     color: black;
-}
-.cont2text ul li a{
+  }
+  .cont2text ul li a {
     font-family: "Red Hat Display", serif;
     color: black;
     font-size: 26px;
     text-decoration: underline;
     text-underline-offset: 10px;
-}
-.cont2text ul li:nth-child(1){
+  }
+  .cont2text ul li:nth-child(1) {
     font-size: 18px;
     font-weight: 300;
     color: #adadad;
     font-family: "Noto Sans KR", sans-serif;
-}
-.cont2text ul li:nth-child(2){
+  }
+  .cont2text ul li:nth-child(2) {
     margin-top: 32px;
     font-size: 60px;
     font-weight: 600;
-}
-.cont2text ul li:nth-child(3){
+  }
+  .cont2text ul li:nth-child(3) {
     font-family: "Noto Sans KR", sans-serif;
     font-size: 28px;
     margin-top: 20px;
     margin-bottom: 40px;
-}
-.cont2text ul li:nth-child(4){
+  }
+  .cont2text ul li:nth-child(4) {
     font-family: "Noto Sans KR", sans-serif;
     margin-bottom: 40px;
-    font-size: 18px;             
-}
-
-
-.brandtech{
-    width: 100%;
+    font-size: 18px;
+  }
+  
+  .brandtech {
+    width: 1240px;
     height: 100vh;
-    padding: 80px;
-}
-.techtext{
-    margin-bottom: 132px;
-}
-.techtext li{
+    margin: 0 auto;
+  }
+  .techtext {
+    margin-bottom: 124px;
+    text-align: center;
+  }
+  .techtext li {
     font-family: "Raleway", serif;
     color: black;
-
-}
-.techtext li:first-child{
+  }
+  .techtext li:first-child {
     font-size: 60px;
     font-weight: 600;
-}
-.techtext li:last-child{
+  }
+  .techtext li:last-child {
     font-size: 20px;
     font-family: "Noto Sans KR", sans-serif;
-    margin-top: 34px;
-}
-
-
-.techpic{
+    margin-top: 20px;
+  }
+  
+  .techpic {
     display: flex;
     justify-content: center;
-
-}
-.techpic1{
+  }
+  .techpic1 {
     width: 400px;
     height: 534px;
-    background: url(img/ocean.webp)  -150px center;
+    background: url(img/ocean.webp) -150px center;
     background-size: cover;
     position: relative;
-}
-.techpic1_title{
+  }
+  .techpic1_title {
     font-family: "Tiro Devanagari Hindi", serif;
     color: #fff;
     font-size: 30px;
     position: absolute;
     top: 40px;
     left: 20px;
-}
-.techpic1_text{
+  }
+  .techpic1_text {
     color: #fff;
     font-size: 14px;
     position: absolute;
     top: 80%;
     left: 20px;
-}
-
-.techpic2{
+  }
+  
+  .techpic2 {
     width: 400px;
     height: 534px;
     background: url(img/Hyaluronic\ acid.png) no-repeat center center;
@@ -301,142 +707,44 @@ header{
     position: relative;
     margin-left: 20px;
     margin-right: 20px;
-}
-.techpic2_title{
+  }
+  .techpic2_title {
     font-family: "Tiro Devanagari Hindi", serif;
     color: #fff;
     font-size: 30px;
     position: absolute;
     top: 40px;
     left: 20px;
-}
-.techpic2_text{
+  }
+  .techpic2_text {
     color: #fff;
     font-size: 14px;
     position: absolute;
     top: 80%;
     left: 20px;
-}
-
-.techpic3{
+  }
+  
+  .techpic3 {
     width: 400px;
     height: 534px;
     background: url(img/ingredient4_2.png) no-repeat center center;
     background-size: cover;
     position: relative;
-}
-.techpic3_title{
+  }
+  .techpic3_title {
     font-family: "Tiro Devanagari Hindi", serif;
     color: #fff;
     font-size: 30px;
     position: absolute;
     top: 40px;
     left: 20px;
-}
-.techpic3_text{
+  }
+  .techpic3_text {
     color: #fff;
     font-size: 14px;
     position: absolute;
     top: 80%;
     left: 20px;
+  }
+  /* 컨테이너 끝 */
 }
-/* 컨테이너 끝 */
-
-/* 풋터시작 */
-.footer{
-    width: 100%;
-    height:280px;
-    display: flex;
-    align-items: center;
-     
-}
-.copyright{
-    margin-left: 320px;
-    margin-right: 360px;
-}
-.copyright li{
-    color: black;
-    font-family: "Raleway", serif;
-}
-.copyright li:first-child{
-    font-size: 30px;
-}
-.copyright li:last-child{
-    font-size: 16px;
-}
-.sitemap{
-    margin-right: 40px;
-}
-.sitemap li{
-    color: black; 
-    font-size: 12px; 
-}
-.sitemap li a{
-    color: black;
-    font-size: 12px;
-}
-.info{
-    margin-right: 60px;
-}
-.info li{
-    color: black;
-    font-size: 12px;
-}
-.cs li{
-    color: black;
-    font-size: 12px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:768px) {
-    header{
-        padding: 0 40px;
-    }
-    .logo{
-        font-size: 36px;
-        font-weight: 300;
-    }
-    .menubox{
-        align-items: flex-start;
-        flex-direction: column;
-    }
-    .menu{
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        display: none;
-    }
-    .menu li{
-        width: 100%;
-        text-align: center;
-    }
-    .memu_togglebtn{
-        position: absolute;
-        right: 32px;
-        font-size: 18px;
-        display: block;
-        color: white;
-        cursor: pointer;
-    }
-
-    .menu.active{
-        right: 0;
-    }
-    }
-
